@@ -1,4 +1,4 @@
-export let game = {
+let game = {
   canvas: null,
   ctx: null,
   board: null,
@@ -31,7 +31,7 @@ export let game = {
     });
   },
   init() {
-    this.canvas = document.getElementById('canvas');
+    this.canvas = document.getElementById('mycanvas');
     this.ctx = this.canvas.getContext('2d');
     this.initDimensions();
     this.setTextFont();
@@ -151,3 +151,6 @@ export let game = {
   }
 };
 
+window.addEventListener('load', () => {
+  game.start();
+});

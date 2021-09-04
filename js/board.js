@@ -1,5 +1,3 @@
-import {game} from "./game.js";
-
 game.board = {
   game: game,
   size: 15,
